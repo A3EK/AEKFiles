@@ -107,17 +107,17 @@ end
 if Manager(msg) then
 if text == 'تفعيل ردود البوت' or text == 'تفعيل الردود' then
 if not DevAek:get(AEK..'Aek:Lock:Reply'..msg.chat_id_) then
-Dev_Aek(msg.chat_id_, msg.id_, 1, '⌁︙ردود البوت بالتاكيد مفعله ', 1, 'md')
+Dev_Aek(msg.chat_id_, msg.id_, 1, '♕︙ردود البوت بالتاكيد مفعله ', 1, 'md')
 else
-Dev_Aek(msg.chat_id_, msg.id_, 1, '⌁︙تم تفعيل ردود البوت', 1, 'md')
+Dev_Aek(msg.chat_id_, msg.id_, 1, '♕︙تم تفعيل ردود البوت', 1, 'md')
 DevAek:del(AEK..'Aek:Lock:Reply'..msg.chat_id_)
 end end
 if text == 'تعطيل ردود البوت' or text == 'تعطيل الردود' then
 if DevAek:get(AEK..'Aek:Lock:Reply'..msg.chat_id_) then
-Dev_Aek(msg.chat_id_, msg.id_, 1, '⌁︙ردود البوت بالتاكيد معطله ', 1, 'md')
+Dev_Aek(msg.chat_id_, msg.id_, 1, '♕︙ردود البوت بالتاكيد معطله ', 1, 'md')
 else
 DevAek:set(AEK..'Aek:Lock:Reply'..msg.chat_id_,true)
-Dev_Aek(msg.chat_id_, msg.id_, 1, '⌁︙تم تعطيل ردود البوت', 1, 'md')
+Dev_Aek(msg.chat_id_, msg.id_, 1, '♕︙تم تعطيل ردود البوت', 1, 'md')
 end end
 end
 end
